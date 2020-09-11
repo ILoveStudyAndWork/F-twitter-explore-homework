@@ -1,0 +1,12 @@
+.btn {
+  color: $primary-color;
+  background-color: $body-bg;
+  border-radius: $btn-border-radius;
+  padding: $btn-padding-y $btn-padding-x;
+  border: 1px solid $primary-color;
+  &-primary {
+    @extend .btn;
+    background-color: $primary-color;
+    color: $white;
+  }
+}

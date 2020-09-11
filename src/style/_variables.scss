@@ -10,9 +10,17 @@ $gray-dark: #253341 !default;
 $black: #000 !default;
 
 $primary-color: #1991da !default;
-$body-bg: #16212b !default;
+$body-bg: #16212B !default;
 $color-base: $gray !default;
 $heading-color: $white !default;
 $link-color: $gray !default;
 $link-hover-color: darken($link-color, 15%) !default;
 $border-color: rgb(61, 84, 102);
+
+$container-padding-y:40px;
+$container-padding-x:40px;
+
+$btn-padding-y:5px;
+$btn-padding-x:30px;
+$btn-magin-left:5px;
+$btn-border-radius:20px

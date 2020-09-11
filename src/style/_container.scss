@@ -1,4 +1,4 @@
-.container {
+.form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -20,9 +20,13 @@
 
 .text-forget-psw {
   align-self: flex-start;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .text-or {
-  margin: 10px 0;
+  margin: 15px 0;
+}
+
+head-message {
+  margin: 0 0 10px 0;
 }

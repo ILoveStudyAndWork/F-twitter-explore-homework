@@ -17,10 +17,21 @@ $link-color: $gray !default;
 $link-hover-color: darken($link-color, 15%) !default;
 $border-color: rgb(61, 84, 102);
 
-$container-padding-y:40px;
+$header-padding-y:20px;
+$header-padding-x:20px;
+
+$container-padding-y:50px;
 $container-padding-x:40px;
+
+$container-margin-y:8%;
+$container-margin-x:35%;
+
 
 $btn-padding-y:5px;
 $btn-padding-x:30px;
 $btn-magin-left:5px;
-$btn-border-radius:20px
+$btn-border-radius:20px;
+
+$btn-container-padding-y:1px;
+$btn-container-padding-x:150px;
+

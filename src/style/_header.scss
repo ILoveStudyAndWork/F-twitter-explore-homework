@@ -2,19 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: $container-padding-y $container-padding-x;
-  border-bottom: 1px solid $gray-light;
+  padding: $header-padding-y $header-padding-x;
+  border-bottom: 1px solid $border-color;
   color: $heading-color;
   nav {
     >ul {
       display: flex;
       >li {
         margin-left: $btn-magin-left;
+        padding: $btn-padding-y $btn-padding-x;
       }
-
     }
-
-
-
   }
 }

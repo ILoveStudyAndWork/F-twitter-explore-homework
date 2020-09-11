@@ -1,12 +1,17 @@
 .btn {
-  color: $primary-color;
-  background-color: $body-bg;
+  @include btn-variant($body-bg,$primary-color);
   border-radius: $btn-border-radius;
-  padding: $btn-padding-y $btn-padding-x;
   border: 1px solid $primary-color;
   &-primary {
     @extend .btn;
-    background-color: $primary-color;
-    color: $white;
+    @include btn-variant($primary-color,$white);
+  }
+  &-container {
+    @extend .btn;
+    width: 100%;
+    &-primary {
+      @extend .btn-container;
+      @include btn-variant($primary-color,$white);
+    }
   }
 }

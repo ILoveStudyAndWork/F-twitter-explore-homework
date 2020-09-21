@@ -1,17 +1,20 @@
+//TODO feedback: 虽然SASS提供&-这样的语法，但是项目上我们几乎不会去使用，因为它会找出代码不好读，很难维护，所以尽量少用，甚至不用
+// 对于SASS继承的使用方式是正确的，但是一般我们我们不这么写。
+// 一般用法是：你可以在这个_extend.scss文件定义一个.btn class, 然后在_header.scss或者_container.scss文件里面的class里面再来继承这个.btn
 .btn {
-  @include btn-variant($body-bg,$primary-color);
+  @include btn-variant($body-bg, $primary-color);
   border-radius: $btn-border-radius;
   border: 1px solid $primary-color;
   &-primary {
     @extend .btn;
-    @include btn-variant($primary-color,$white);
+    @include btn-variant($primary-color, $white);
   }
   &-container {
     @extend .btn;
     width: 100%;
     &-primary {
       @extend .btn-container;
-      @include btn-variant($primary-color,$white);
+      @include btn-variant($primary-color, $white);
     }
   }
 }

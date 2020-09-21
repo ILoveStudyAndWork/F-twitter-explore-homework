@@ -17,13 +17,17 @@
     </ul>
   </nav>
 </header>
+<!--  TODO Feedback: container是一个没有业务逻辑的命名，这里取名叫做'main'就好了-->
 <main class="container">
   <form class="form">
+    <!--      TODO feedback: 语义化标签使用不正确：placeholder里面的内容应该放入<label>标签-->
     <h2 class="head-message">查看世界上正在发生的事情</h2>
     <input class="input" type="text" placeholder="电话，邮件地址密码或用户名" />
     <input class="input" type="text" placeholder="密码" />
+    <!--      TODO feedback: 一般忘记密码是一个连接，那么这里就应该使用<a>标签-->
     <span class="text-forget-psw">忘记密码?</span>
     <button class="btn-container">登录</button>
+    <!--      TODO feedback: 这里不是一个连接，所以不应该使用<a>标签-->
     <a class="text-or">或</a>
     <button class="btn-container-primary">注册</button>
   </form>
